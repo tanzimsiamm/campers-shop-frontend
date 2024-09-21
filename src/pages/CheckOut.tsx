@@ -20,19 +20,19 @@ const CheckOut = () => {
         productId: product._id,
         quantity: product.stockQuantity,
       })
-    ) || [];
+    );
   
     const orderData = {
       ...data,
       orderedProducts,
-      total: location.state?.total || 0,
+      total: location.state?.total ,
     };
 
     console.log("Order Data being sent: ", orderData);
   
     try {
-      const response = await createProduct(orderData);
-      if (response) {
+      const response = await createProduct(orderData).unwrap();
+      if (response.success) {
         navigate("/order-successful");
       } else {
         toast.error("Something went wrong");
