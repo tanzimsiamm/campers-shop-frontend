@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Campers Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live Server: [https://campers-shop-six.vercel.app](https://campers-shop-six.vercel.app)
 
-Currently, two official plugins are available:
+## Overview:
+Campers Shop is an e-commerce site focused on camping products where users can browse, manage, and purchase all the essentials needed for a great camping experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features:
+- **Product Management:** Users can create, update, and delete products from the Product Management page.
+- **Filtering & Search:** Users can filter products by price and category, or search for specific items.
+- **Product Details:** Users can view full product details by clicking the "See Details" button on product listings.
+- **Cart & Orders:** Users can add products to the cart from the Product Details page and place an order for the items in the cart.
+- **Checkout:** Users must provide their information to place an order via the Checkout page.
 
-## Expanding the ESLint configuration
+## Technologies Used:
+- **Frontend:**
+  - HTML, Tailwind CSS
+  - React, Redux Toolkit
+  - TypeScript
+  - DaisyUI (for styling)
+  - React Hook Form (for forms)
+  - React Router DOM (for routing)
+  - React Slick (for carousels)
+  - React Icons (for icons)
+  - @szhsin/react-accordion (for collapsible sections)
+- **State Management:** RTK Query for efficient data fetching and caching.
+- **Responsive Design:** The site is fully responsive for all screen sizes, with pixel-perfect adjustments.
+- **Error Handling:** Comprehensive error handling throughout the application for a smooth user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## How to Run the Project Locally:
+1. **Clone the Project:** Clone this repository to your local machine.
+2. **Install Dependencies:** Run `npm install` to install all required packages.
+3. **Set up Backend:**
+   - Replace the backend API URL in the `baseApi.ts` file with your backend server URL.
+   - The backend server for this project is available in the "camper-haven-backend" repository.
+4. **Start the Development Server:** Run `npm start` to start the development server.
+5. **Build the Project:** To build the project for production, use the command `npm run build`.

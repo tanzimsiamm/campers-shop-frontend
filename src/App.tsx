@@ -1,8 +1,13 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 const App = () => {
   return (
-    <div>
-      this is home page
+    <div className="mt-3 mr-16 ml-16">
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

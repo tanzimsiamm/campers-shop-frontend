@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Tailwind CSS */
+.underline-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Adjust this value to move the underline lower */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust thickness */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .underline-link-hover::after {
+    background-color: #000; /* Black underline on hover */
+  }
+  
+  .underline-link-active::after {
+    background-color: #3b82f6; /* Blue underline when active */
+  }
+  
