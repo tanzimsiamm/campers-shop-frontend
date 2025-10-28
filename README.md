@@ -1,36 +1,78 @@
-# Campers Shop
+# 🏕️ Campers Shop
 
-### Live Server: https://campers-shop-frontend-iota.vercel.app
+### Live Server: [https://campers-shop-frontend-iota.vercel.app](https://campers-shop-frontend-iota.vercel.app)
 
-## Overview:
-Campers Shop is an e-commerce site focused on camping products where users can browse, manage, and purchase all the essentials needed for a great camping experience.
+---
 
-## Features:
-- **Product Management:** Users can create, update, and delete products from the Product Management page.
-- **Filtering & Search:** Users can filter products by price and category, or search for specific items.
-- **Product Details:** Users can view full product details by clicking the "See Details" button on product listings.
-- **Cart & Orders:** Users can add products to the cart from the Product Details page and place an order for the items in the cart.
-- **Checkout:** Users must provide their information to place an order via the Checkout page.
+## Overview
+Campers Shop is an **e-commerce site** focused on camping products where users can browse, manage, and purchase all essentials for a great camping experience.
 
-## Technologies Used:
-- **Frontend:**
-  - HTML, Tailwind CSS
-  - React, Redux Toolkit
-  - TypeScript
-  - DaisyUI (for styling)
-  - React Hook Form (for forms)
-  - React Router DOM (for routing)
-  - React Slick (for carousels)
-  - React Icons (for icons)
-- **State Management:** RTK Query for efficient data fetching and caching.
-- **Responsive Design:** The site is fully responsive for all screen sizes, with pixel-perfect adjustments.
-- **Error Handling:** Comprehensive error handling throughout the application for a smooth user experience.
+---
 
-## How to Run the Project Locally:
-1. **Clone the Project:** Clone this repository to your local machine.
-2. **Install Dependencies:** Run `npm install` to install all required packages.
-3. **Set up Backend:**
-   - Replace the API of backend-part URL in the `baseApi.ts` file with your backend server URL.
-   - The backend server for this project is available in the "camper-haven-backend" repository.
-4. **Start the Development Server:** Run `npm run dev` to start the development server.
-5. **Build the Project:** To build the project for production, use the command `npm run build`.
+## Features
+
+- **Product Management:** Create, update, and delete products from the management page.  
+- **Filtering & Search:** Filter by price or category, or search for specific items.  
+- **Product Details:** Full product details via "See Details" button.  
+- **Cart & Orders:** Add items to the cart and place orders.  
+- **Checkout:** Enter user information to complete an order.
+
+---
+
+## Technologies Used
+
+**Frontend:**  
+- HTML, Tailwind CSS, DaisyUI  
+- React, Redux Toolkit  
+- TypeScript  
+- React Hook Form (forms)  
+- React Router DOM (routing)  
+- React Slick (carousels)  
+- React Icons (icons)  
+
+**State Management:**  
+- RTK Query for efficient data fetching and caching  
+
+**Responsive Design:**  
+- Fully responsive with pixel-perfect adjustments  
+
+**Error Handling:**  
+- Smooth user experience with comprehensive error handling
+
+---
+
+## 🖼️ Project Screenshots
+
+### Homepage & Featured Sections
+<p align="center">
+  <img src="public/Homepage.png" alt="Homepage" width="300"/>
+  <img src="public/top camping gear.png" alt="Top Camping Gear" width="300"/>
+  <img src="public/featured products.png" alt="Featured Products" width="300"/>
+</p>
+
+### Categories & Product Details
+<p align="center">
+  <img src="public/categories.png" alt="Categories" width="300"/>
+  <img src="public/Product Details.png" alt="Product Details" width="300"/>
+</p>
+
+### Cart & Orders
+<p align="center">
+  <img src="public/Cart.png" alt="Cart" width="300"/>
+  <img src="public/All Products.png" alt="All Products" width="300"/>
+</p>
+
+### Product Management & Testimonials
+<p align="center">
+  <img src="public/Product Management.png" alt="Product Management" width="300"/>
+  <img src="public/What Our Customers Say.png" alt="Customer Testimonials" width="300"/>
+</p>
+
+---
+
+## How to Run Locally
+
+1. **Clone the Repository:**  
+```bash
+git clone https://github.com/tanzimsiamm/campers-shop-frontend.git
+cd campers-shop-frontend
